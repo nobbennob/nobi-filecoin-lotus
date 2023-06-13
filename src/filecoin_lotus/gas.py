@@ -17,14 +17,14 @@ class Gas:
         """
         return self._provider.make_request(RPC.gas_estimateFeeCap, [message, number, tip_set_key])
 
-    def estimate_gas_limit(self, message: dict, tip_set_key: list = None) -> int:
+    def estimate_message_gas(self, message: dict, tip_set_key: list = None) -> int:
         """
-        Estimate gas limit of the message
+        Estimate gas of the message. this methed estimates gas values for unset message gas fields
         :param message
         :param tip_set_key : Cid[]
-        :return: int
+        :return: message
         """
-        return self._provider.make_request(RPC.gas_estimateGasLimit, [message, tip_set_key])
+        return self._provider.make_request(RPC.gas_estimateMessageGas, [message, {"MaxFee": "0"}, tip_set_key])
 
     def estimate_gas_premium(self, nblocksincl: int, sender: str, gas_limit: int, tip_set_key: list = None) -> int:
         """
