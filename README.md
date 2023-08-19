@@ -2,7 +2,7 @@
 A simple python package interacts with the filecoin lotus node, python version >=3.6 is recommend
 # Install
 ```
-pip3 install filecoin-lotus
+pip3 install nobi-filecoin-lotus
 ```
 
 # Groups

@@ -7,15 +7,15 @@ with open('requirements.txt') as f:
     required = f.read().splitlines()
 
 setuptools.setup(
-    name="filecoin-lotus",
-    version="1.2.1",
+    name="nobi-filecoin-lotus",
+    version="1.2.3", # forked_version -> "1.2.1",
     author="Wen",
     author_email="wenqinchao@gmail.com",
     description="A package interact with bitcoin node",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="MIT",
-    url="https://github.com/wenqinchao/filecoin-lotus",
+    url="https://github.com/nobbennob/nobi-filecoin-lotus",  # main_repo -> "https://github.com/wenqinchao/filecoin-lotus",
     packages=setuptools.find_packages(where="src"),
     classifiers=[
         "Programming Language :: Python :: 3",
