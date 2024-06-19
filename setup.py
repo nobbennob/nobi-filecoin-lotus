@@ -8,7 +8,7 @@ with open('requirements.txt') as f:
 
 setuptools.setup(
     name="nobi-filecoin-lotus",
-    version="1.2.3", # forked_version -> "1.2.1",
+    version="1.2.4", # forked_version -> "1.2.1",
     author="Wen",
     author_email="wenqinchao@gmail.com",
     description="A package interact with bitcoin node",
